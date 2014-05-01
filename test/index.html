@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
+  <script src="../node_modules/chai/chai.js"></script>
+  <script src="../node_modules/mocha/mocha.js"></script>
+  <script src-="../node_modules/underscore/underscore.js"></script>
+  <script src="../idb_observer.js"></script>
+</head>
+<body>
+  <div id="mocha"></div>
+  <script>mocha.setup({ timeout: '10s', ui: 'bdd' });</script>
+  <script>var assert = chai.assert</script>
+
+  <!-- Load our tests -->
+  <script src="idb_observer_test.js"></script>
+
+</body>
+  <script>mocha.run()</script>
+</html>
